@@ -1,7 +1,7 @@
 const email = document.getElementById('email-address');
 const password = document.getElementById('password');
 
-document.getElementById('login-form').addEventListener('submit', async (event) => {
+document.getElementById('signup-form').addEventListener('submit', async (event) => {
     event.preventDefault();
 
     if (!email.value) {
@@ -13,7 +13,7 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
         return;
     }
 
-    const response = await fetch('http://localhost:3000/login', {
+    const response = await fetch('http://localhost:3000/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

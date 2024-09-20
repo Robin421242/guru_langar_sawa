@@ -4,11 +4,14 @@ const cors = require('cors');
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+dotenv.config({ path: './../.env' });  
 
+console.log('Loaded Environment Variables:', process.env);
 app.use(express.json());
 
 //Connect db
-mongoose.connect(DATABASE_URL);
+mongoose.connect(process.env.DATABASE_URL);
 
 app.use(cors());
 
