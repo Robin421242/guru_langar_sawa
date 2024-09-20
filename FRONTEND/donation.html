@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru's Langar Donation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+
+
+      .donation-section {
+            background: linear-gradient(145deg, #ff4500, #ff8c00, #ff4500); /* Lava-like gradient */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(255, 69, 0, 0.8); /* Intense lava glow */
+            text-align: center;
+            max-width: 400px;
+            border: 2px solid #ff4500; /* Lava color */
+        }
+
+        .donation-section h1 {
+            color: #fff; /* White color for contrast */
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+        }
+
+        .donation-section p {
+            color: #f5f5f5; /* Light gray for readability */
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+
+        .upi-code {
+            margin-bottom: 20px;
+        }
+
+        .upi-code label {
+            display: block;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .upi-code input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #ffc107;
+            outline: none;
+            text-align: center;
+        }
+
+        .donate-button {
+            background-color: #ffc107;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .donate-button:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <div class="donation-section">
+        <h1>Donate to Guru's Langar</h1>
+        <p>Your generous contributions help us serve those in need. Scan the QR code below to donate. Guru's Langar is a noble initiative dedicated to ensuring that no one goes hungry. Rooted in the Sikh tradition of selfless service, Guru's Langar provides free, nutritious meals to anyone in need, regardless of their background, faith, or circumstances. Our mission is simple: to serve humanity with compassion and dignity, one meal at a time. Through the generosity of our volunteers and donors, we are able to reach those who need it most, offering not just food, but hope and a sense of community. At Guru's Langar, we believe that when we come together to help others, we create a more compassionate and just world for all.</p>
+        
+        <div class="upi-code">
+            <label for="upi">Donate via UPI:</label>
+            <input type="text" id="upi" value="8872334530@xyz" readonly>
+        </div>
+    </div>
+</body>
+</html>

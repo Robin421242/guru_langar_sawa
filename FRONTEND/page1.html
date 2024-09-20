@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru ka Langar</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://media.soundoflife.com/articles/511/Sound-of-Life_22June_4_Film-Scores_Animation_10fps.gif"); 
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure background covers entire viewport */
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px; /* Space between the links */
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    position: relative;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    transition: width 0.3s ease;
+    border-radius: 5px;
+}
+
+.navigation a:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+.navigation a:hover {
+    color: #ff0000; /* Change color on hover */
+}
+
+h1 {
+    color: white;
+    user-select: none;
+}
+
+.tagline {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #aa7e7e;
+    margin-top: 20px; /* Space above the tagline */
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px; /* Adjust this value to move it further down */
+}
+   
+    </style>
+</head>
+<body>
+    <div class="tagline">
+        ... Bread Has No Religion,  Water Has NO Caste ...
+        
+    </div>
+    <header>
+        <h1>Guru ka Langar</h1>
+        <nav class="navigation">
+            <a href="donation.html">Donation</a>
+            <a href="page3.html">History</a>
+            <a href="ngo.html">NGO'S</a>
+            <a href="login.html" class="login-button">Log in</a>
+        </nav>
+    </header>
+</body>
+</html>
